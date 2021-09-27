@@ -1,0 +1,13 @@
+:root {
+  --pale-gray: #f5f6fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--pale-gray);
+}
