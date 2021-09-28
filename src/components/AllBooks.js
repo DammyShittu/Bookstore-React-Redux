@@ -32,7 +32,7 @@ const AllBooks = () => {
   }
   return (
     <div>
-      <h3>No Books Yet😔</h3>
+      <h3>No Books Yet...😔</h3>
       <h3>Please type here 👇 to add your favorite books.</h3>
       <BookInput propsToAddBooks={addNew} />
     </div>
