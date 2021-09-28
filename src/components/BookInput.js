@@ -30,7 +30,7 @@ const BookInput = (props) => {
       <h2>Add New Book</h2>
 
       <form className="form" onSubmit={handleSubmit}>
-      <input
+        <input
           type="text"
           placeholder="Book Title"
           value={input.title}
@@ -38,7 +38,7 @@ const BookInput = (props) => {
           onChange={onChange}
           required
         />
-      <input
+        <input
           type="text"
           placeholder="Book Author"
           value={input.author}

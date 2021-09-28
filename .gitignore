@@ -10,9 +10,6 @@
 
 # production
 /build
-.babelrc
-.eslintrc.json
-.stylelintrc.json
 
 # misc
 .DS_Store
