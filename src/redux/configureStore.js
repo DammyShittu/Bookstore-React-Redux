@@ -3,12 +3,12 @@ import logger from 'redux-logger';
 import booksReducer from './Books/Books';
 
 const reducer = combineReducers({
-    booksReducer
+  booksReducer,
 });
 
 const store = createStore(
-    reducer,
-    applyMiddleware(logger)
+  reducer,
+  applyMiddleware(logger),
 );
 
 export default store;

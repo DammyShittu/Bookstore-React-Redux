@@ -9,7 +9,7 @@ import Categories from './components/Categories';
 function App() {
   return (
     <Provider store={store}>
-    <div className="App">
+      <div className="App">
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -20,7 +20,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      </Provider>
+    </Provider>
   );
 }
 
