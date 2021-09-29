@@ -11,10 +11,10 @@ const Book = ({ books, propsToRemoveBooks }) => (
         <br />
         <span>{book.author}</span>
         <br />
-          <button type="button" onClick={() => propsToRemoveBooks(book.id)}>Remove</button>
+        <button type="button" onClick={() => propsToRemoveBooks(book.id)}>Remove</button>
       </li>
-      ))
-    };
+    ))}
+    ;
   </ul>
 );
 
