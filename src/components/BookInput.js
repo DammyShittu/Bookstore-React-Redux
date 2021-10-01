@@ -31,7 +31,7 @@ const BookInput = () => {
   };
 
   return (
-    <section>
+    <section className="form-section">
       <h2>Add New Book</h2>
 
       <form className="form" onSubmit={handleSubmit}>
