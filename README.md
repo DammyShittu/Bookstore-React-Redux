@@ -3,6 +3,21 @@
 # Bookstore
 > Bookstore is a single-paged application with two subpages, `Books` and `Categories`. Books are displayed in the `Books` page while the `Categories` page is *currently being worked on*. Bookstore allows users to add their favorite book(s) and delete selected book(s).
 
+# Live Link
+
+This [app](https://dammy-bookstore.netlify.app/) is currently being hosted on Netlify.
+
+# Screenshots
+### Empty Bookstore
+
+![](./src/images/screenshot.png)
+
+### Bookstore with Books
+
+![](./src/images/screenshot2.png)
+
+
+
 # Getting Started
 
 To get a local copy up and running follow these simple steps.
