@@ -1,28 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
-import { deleteBook } from '../redux/Books/Books';
+import BookInfo from './BookInfo';
+import BookActions from './BookActions';
+import BookProgress from './BookProgress';
+import BooksChapter from './BooksChapter';
 
-const Book = ({ books }) => {
-  const dispatch = useDispatch();
-  return (
-    <ul>
-      {books.map((book) => (
-        <li key={uuidv4()}>
-          <span>{book.title}</span>
-          <br />
-          <span>{book.category}</span>
-          <br />
-          <button type="button" onClick={() => dispatch(deleteBook(book.id))}>Remove</button>
-        </li>
-      ))}
-    </ul>
-  );
-};
+const Book = ({
+  id,
+  category,
+  title,
+}) => (
+  <section className="all-books">
+    <div className="description">
+      <BookInfo category={category} title={title} />
+      <BookActions id={id} />
+    </div>
+    <div className="progress-chapter">
+      <div>
+        <BookProgress />
+      </div>
+      <span className="vertical-line" />
+      <div>
+        <BooksChapter />
+      </div>
+    </div>
+  </section>
+);
 
 Book.propTypes = {
-  books: PropTypes.instanceOf(Array).isRequired,
+  id: PropTypes.string,
+  category: PropTypes.string,
+  title: PropTypes.string,
+};
+
+Book.defaultProps = {
+  id: '',
+  category: '',
+  title: '',
 };
 
 export default Book;

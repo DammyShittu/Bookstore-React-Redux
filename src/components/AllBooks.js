@@ -1,7 +1,7 @@
 import { React, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getBooks } from '../redux/Books/Books';
-import Book from './Book';
+import BookList from './BookList';
 import BookInput from './BookInput';
 
 const AllBooks = () => {
@@ -16,15 +16,18 @@ const AllBooks = () => {
   if (myBooks.length) {
     return (
       <div>
-        <Book books={myBooks} />
+        <BookList books={myBooks} />
+        <hr />
         <BookInput />
       </div>
     );
   }
   return (
-    <div>
-      <h3>No Books Yet...😔</h3>
-      <h3>Please type here 👇 to add your favorite books.</h3>
+    <div className="no-books">
+      <div>
+        <h3>No Books Yet...😔</h3>
+        <h3>Please type here 👇 to add your favorite books.</h3>
+      </div>
       <BookInput />
     </div>
   );
